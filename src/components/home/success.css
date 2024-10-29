@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.success-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: linear-gradient(180deg, #241D47 0%, #040309 100%);
+    object-fit: cover;
+    
+}
+
+.success-stories p {
+    font-family: 'Sora';
+    font-size: 18px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.header p {
+    font-size: 15px;
+    margin-bottom: 1rem;
+    font-family: 'Inter';
+    color: #BB94E5;
+}
+
+.header h1 {
+    font-size: 46px;
+    margin-bottom: 1rem;
+    font-family: 'Sora';
+    color: #FFFFFF;
+}
+
+.success-stories {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    padding: 0 10%;
+    margin-bottom: 40px;
+    text-align: start;
+}
+
+.story-card {
+    border-radius: 24px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2rem;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    background: radial-gradient(77% 163.4% at 4.1% 97.1%, #1C163B 38.22%, #6430C0 68.95%, #BB94E5 87.85%, #FFFFFF 100%);
+}
+
+.story-card:hover {
+    transform: translateY(-5px);
+}
+
+.story-content {
+    padding: 1rem;
+    color: #FFFFFF;
+}
+
+.story-content h1, .story-content p {
+    padding: 0;
+    color: #FFFFFF;
+}
+
+.company-name {
+    font-size: 0.9rem;
+    color: #9d9de8;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.story-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.story-description {
+    color: #e0e0e0;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.metrics {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.metric {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.metric-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #3a07ba;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+}
+
+.cta-button:hover {
+    background-color: #553c9a;
+}
+
+.screenshot-01, .screenshot-02 {
+    width: 120%;
+    position: relative;
+    min-height: 300px;
+    background-color: #0d051c;
+    border-radius: 40px;
+}
+
+.screenshot-01 img, .screenshot-02 img {
+    width: 95%;
+    height: 71%;
+    object-fit: cover;
+    border-radius: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    margin-top: 60px;
+    margin-left: 9px;
+}
+
+/* Responsive Design for Screens below 1024px */
+@media (max-width: 1024px) {
+    .success-container {
+        padding: 0 5%;
+    }
+
+    .story-card {
+        flex-direction: row;
+        gap: 1rem;
+        padding: 1.5rem;
+    }
+
+    .story-title {
+        font-size: 2rem;
+    }
+
+    .story-description {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        padding: 0.7rem 1.2rem;
+    }
+
+    .metrics {
+        gap: 1rem;
+    }
+}
+
+/* Responsive Design for Screens below 768px */
+@media (max-width: 768px) {
+    .success-stories {
+        width: 100%;
+        padding: 0 5%;
+    }
+
+    .story-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+    }
+
+    .screenshot {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 1rem;
+    }
+
+    .story-title {
+        font-size: 1.8rem;
+    }
+
+    .story-description {
+        font-size: 1rem;
+    }
+
+    .metrics {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .cta-button {
+        margin: 0 auto;
+        padding: 0.7rem 1.2rem;
+    }
+}
+
+/* Responsive Design for Screens below 480px */
+@media (max-width: 480px) {
+    .success-stories {
+        padding: 0 2%;
+    }
+
+    .story-card {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .screenshot {
+        width: 100%;
+        height: 150px;
+        margin-bottom: 1rem;
+    }
+
+    .story-title {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .story-description {
+        font-size: 0.85rem;
+    }
+
+    .metrics {
+        gap: 0.6rem;
+    }
+
+    .cta-button {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+}

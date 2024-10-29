@@ -1,0 +1,336 @@
+.contactus-navbar{
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  width: 100%;
+ 
+   
+  z-index: 1000;
+}  
+/* Dropdown Menu Styles */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  width: 300px;
+  left: 0;
+  display: none;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.95);
+  padding: 2rem 0;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.dropdown-menu.show {
+  display: flex;
+}
+
+.dropdown-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+  width: 100%;
+}
+
+.dropdown-link:hover {
+  background-color: #a855f7;
+  color: #fff;
+  border-radius: 4px;
+}
+
+/* Adjust nav-menu on hover */
+.nav-menu .dropdown:hover .dropdown-menu {
+  display: flex;
+}
+
+/* Mobile Menu Adjustments */
+@media (max-width: 768px) {
+  .dropdown-menu {
+    position: relative;
+    display: none;
+  }
+
+  .dropdown-menu.show {
+    display: block;
+  }
+}
+
+
+.contactus-nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #a855f7;
+}
+
+.contact-btn {
+  padding: 0.5rem 1rem;
+  background: transparent;
+  border: 1px solid #a855f7;
+  color: #a855f7;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+  background: #a855f7;
+  color: #fff;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+}
+
+.hamburger span {
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  transition: all 0.3s linear;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-menu {
+    z-index: 1;
+    display: none;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    padding: 2rem;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  /* Hamburger animation */
+  .hamburger.active span:first-child {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:last-child {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+}
+
+/* Additional hover effects */
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #a855f7;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+
+
+.nv{
+  background: linear-gradient(#040309 68.04%, #7920b9, #ffff);
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.cmain {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  text-align: center;
+  /* max-height: fit-content; */
+  padding-bottom: 200px;
+  margin-top: 80px;
+
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-info {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.contact-button {
+  background: none;
+  border: 1px solid white;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  background: rgba(34, 27, 69, 1);
+  padding: 1rem;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.cardd {
+  display: flex;
+  gap: 10px;
+}
+
+.divide {
+  display: flex;
+  gap: 10px;
+}
+
+input,
+textarea {
+  width: 95%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  background: rgba(34, 27, 69, 1);
+  border: 1px solid;
+  color: white;
+  border-radius: 5px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #ffff;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 0.5rem;
+  background: rgba(100, 48, 192, 1);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background: #660066;
+}
+
+
+.nv{
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.cmain .stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    radial-gradient(1px 1px at 25% 15%, white 1px, transparent 0),
+    radial-gradient(1px 1px at 50% 25%, white 1px, transparent 0),
+    radial-gradient(1px 1px at 75% 5%, white 1px, transparent 0),
+    radial-gradient(1px 1px at 10% 35%, white 1px, transparent 0),
+    radial-gradient(1px 1px at 20% 45%, white 1px, transparent 0),
+    radial-gradient(1px 1px at 30% 55%, white 1px, transparent 0),
+    radial-gradient(1px 1px at 40% 65%, white 1px, transparent 0),
+    radial-gradient(1px 1px at 60% 75%, white 1px, transparent 0),
+    radial-gradient(1px 1px at 70% 85%, white 1px, transparent 0),
+    radial-gradient(1px 1px at 80% 5%, white 1px, transparent 0),
+    radial-gradient(1px 1px at 90% 15%, white 1px, transparent 0),
+    radial-gradient(1px 1px at 15% 25%, white 1px, transparent 0),
+    radial-gradient(1px 1px at 35% 35%, white 1px, transparent 0),
+    radial-gradient(1px 1px at 45% 45%, white 1px, transparent 0),
+    radial-gradient(1px 1px at 55% 55%, white 1px, transparent 0),
+    radial-gradient(1px 1px at 65% 65%, white 1px, transparent 0),
+    radial-gradient(1px 1px at 75% 75%, white 1px, transparent 0),
+    radial-gradient(1px 1px at 85% 85%, white 1px, transparent 0),
+    radial-gradient(1px 1px at 95% 95%, white 1px, transparent 0);
+  opacity: 0.5;
+  pointer-events: none;
+  /* z-index: -1; */
+}
+.purple-overlay {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(74, 45, 107, 0.5) 50%,
+      rgba(255, 255, 255, 0.2) 100%);
+  pointer-events: none;
+}

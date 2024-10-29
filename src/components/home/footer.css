@@ -1,0 +1,112 @@
+
+        /* Footer */
+        footer {
+            background-color: #000000;
+            color: white;
+            padding: 60px 0;
+        }
+
+        .footer-content {
+            padding-right: 50px;
+            padding-left: 50px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .footer-section {
+            margin-bottom: 20px;
+        }
+
+        .footer-section h3 {
+            text-align: start;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .footer-section ul {
+            text-align: start;
+            padding: inherit;
+            list-style-type: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 10px;
+            color: #f8f8f8;
+        }
+        .footer-section ul li:hover {
+            background-color: #7c3aed;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 20px;
+        }
+
+        .social-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: transparent;
+            border: 2px solid #8b5cf6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+
+        .social-icon:hover {
+            background-color: #8b5cf6;
+            transform: scale(1.1);
+        }
+
+        .social-icon img {
+            width: 24px;
+            height: 24px;
+            filter: invert(1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .hero-content h1 {
+                font-size: 36px;
+            }
+
+            .hero-content p {
+                font-size: 16px;
+            }
+
+            .get-template-btn {
+                width: 80%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 32px;
+            }
+
+            .hero-content p {
+                font-size: 14px;
+            }
+
+            .get-template-btn {
+                width: 90%;
+            }
+
+            .footer-content {
+                flex-direction: column;
+            }
+
+            .footer-section {
+                margin-bottom: 30px;
+            }
+
+            .faq-question h3 {
+                font-size: 16px;
+            }
+
+            .faq-toggle {
+                font-size: 20px;
+            }
+        }

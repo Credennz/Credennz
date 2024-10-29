@@ -1,0 +1,142 @@
+body {
+    font-family: 'Sora', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.h-process h1 {
+    text-align: center;
+    font-family: 'Sora';
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.h-process h6 {
+    text-align: center;
+    color: #6430C0;
+    font-family: 'Inter';
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+/* Layout for larger screens */
+.process {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px 190px;
+}
+
+.step {
+    text-align: center;
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    margin-bottom: 20px;
+    min-height: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.step-number {
+    font-size: 90px;
+    font-weight: bold;
+    color: #6c63ff;
+    margin-bottom: -25px;
+    margin-left: -210px;
+    margin-top: -30px;
+    font-family: 'Inter';
+}
+
+.step img {
+    width: 180px;
+    height: 130px;
+}
+
+/* Responsive for screens below 1024px */
+@media (max-width: 1024px) {
+    .process {
+        padding: 10px 50px;
+    }
+
+    .step {
+        max-width: 280px;
+    }
+
+    .h-process h1 {
+        font-size: 1.75rem;
+    }
+
+    .h-process h6 {
+        font-size: 1rem;
+    }
+}
+
+/* Responsive for screens below 768px */
+@media (max-width: 768px) {
+    .process {
+        padding: 10px 30px;
+    }
+
+    .step {
+        max-width: 260px;
+        margin-bottom: 15px;
+    }
+
+    .step-number {
+        font-size: 72px;
+        margin-left: -150px;
+    }
+
+    .h-process h1 {
+        font-size: 1.5rem;
+    }
+
+    .h-process h6 {
+        font-size: 0.9rem;
+    }
+
+    .step img {
+        width: 160px;
+        height: 120px;
+    }
+}
+
+/* Responsive for screens below 460px */
+@media (max-width: 460px) {
+    .process {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .step {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .step-number {
+        font-size: 48px;
+        margin-left: -100px;
+    }
+
+    .h-process h1 {
+        font-size: 1.25rem;
+    }
+
+    .h-process h6 {
+        font-size: 0.85rem;
+    }
+
+    .step img {
+        width: 140px;
+        height: 100px;
+    }
+}

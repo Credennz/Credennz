@@ -1,0 +1,84 @@
+
+.service-nav {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(#040309 68.04%, #7920b9, #ffff);
+    color: white;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+}
+.Service-nav-main.stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+      radial-gradient(1px 1px at 25% 15%, white 1px, transparent 0),
+      radial-gradient(1px 1px at 50% 25%, white 1px, transparent 0),
+      radial-gradient(1px 1px at 75% 5%, white 1px, transparent 0),
+      radial-gradient(1px 1px at 10% 35%, white 1px, transparent 0),
+      radial-gradient(1px 1px at 20% 45%, white 1px, transparent 0),
+      radial-gradient(1px 1px at 30% 55%, white 1px, transparent 0),
+      radial-gradient(1px 1px at 40% 65%, white 1px, transparent 0),
+      radial-gradient(1px 1px at 60% 75%, white 1px, transparent 0),
+      radial-gradient(1px 1px at 70% 85%, white 1px, transparent 0),
+      radial-gradient(1px 1px at 80% 5%, white 1px, transparent 0),
+      radial-gradient(1px 1px at 90% 15%, white 1px, transparent 0),
+      radial-gradient(1px 1px at 15% 25%, white 1px, transparent 0),
+      radial-gradient(1px 1px at 35% 35%, white 1px, transparent 0),
+      radial-gradient(1px 1px at 45% 45%, white 1px, transparent 0),
+      radial-gradient(1px 1px at 55% 55%, white 1px, transparent 0),
+      radial-gradient(1px 1px at 65% 65%, white 1px, transparent 0),
+      radial-gradient(1px 1px at 75% 75%, white 1px, transparent 0),
+      radial-gradient(1px 1px at 85% 85%, white 1px, transparent 0),
+      radial-gradient(1px 1px at 95% 95%, white 1px, transparent 0);
+    opacity: 0.5;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+.Service-nav-main {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+.service_content {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+p {
+    font-size: 1rem;
+    color: #cccccc;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+@media (min-width: 600px) {
+
+
+    .service_content{
+        max-width: 800px;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    p {
+        font-size: 1.25rem;
+        max-width: 600px;
+    }
+}
+
+
