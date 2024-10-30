@@ -23,7 +23,7 @@ body {
 /* Layout for larger screens */
 .process {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
     padding: 10px 190px;
