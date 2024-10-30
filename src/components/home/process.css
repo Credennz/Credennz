@@ -39,7 +39,7 @@ body {
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     padding: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
     min-height: 250px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     cursor: pointer;
@@ -56,8 +56,8 @@ body {
 }
 
 .step img {
-    width: 180px;
-    height: 130px;
+    width: 160px;
+    height: 90px;
 }
 
 /* Responsive for screens below 1024px */

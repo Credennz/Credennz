@@ -17,13 +17,14 @@ import Process from "../components/home/process";
 import Service3 from "../components/servicepage/service3";
 import "../components/servicepage/service3.css";
 import "../components/home/process.css";
-
+import Trust from "../components/home/trust";
+import "../components/home/trust.css";
 import React from "react";
 export default function Service() {
   return (
     <div>
       <Servicenav />
-      {/* <Trusthero /> */}
+      <Trust />
       <Service3 />
       <Service1 />
       <Service2 />

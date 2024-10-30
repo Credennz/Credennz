@@ -2,250 +2,180 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
 }
-
-.success-container {
-    max-width: 1200px;
+.ss-success{background-color: rgb(18, 18, 52);}
+.section-container {
+    max-width: 900px;
     margin: 0 auto;
-    background: linear-gradient(180deg, #241D47 0%, #040309 100%);
-    object-fit: cover;
+    padding: 40px 20px;
     
 }
 
-.success-stories p {
-    font-family: 'Sora';
-    font-size: 18px;
+.section-title {
+    color: #FFFFFF;
+    font-size: 32px;
+    margin-bottom: 2rem;
+    font-family: 'Sora', sans-serif;
+    text-align: center;
 }
 
-.header {
+.ss-header {
     text-align: center;
     margin-bottom: 3rem;
 }
 
-.header p {
+.ss-header__subtitle {
     font-size: 15px;
     margin-bottom: 1rem;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     color: #BB94E5;
+    text-transform: uppercase;
 }
 
-.header h1 {
+.ss-header__title {
     font-size: 46px;
-    margin-bottom: 1rem;
-    font-family: 'Sora';
+    margin-bottom: 2rem;
+    font-family: 'Sora', sans-serif;
     color: #FFFFFF;
 }
 
-.success-stories {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    width: 100%;
-    padding: 0 10%;
-    margin-bottom: 40px;
-    text-align: start;
-}
-
-.story-card {
-    border-radius: 24px;
-    padding: 2rem;
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 2rem;
-    transition: transform 0.3s ease;
+.ss-stories-wrapper {
+    position: relative;
     overflow: hidden;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.ss-stories {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.ss-story {
+    flex: 0 0 100%;
+    padding: 40px;
+    border-radius: 24px;
     background: radial-gradient(77% 163.4% at 4.1% 97.1%, #1C163B 38.22%, #6430C0 68.95%, #BB94E5 87.85%, #FFFFFF 100%);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 300px;
 }
 
-.story-card:hover {
-    transform: translateY(-5px);
+.ss-story__content {
+    flex: 1;
+    padding-right: 40px;
 }
 
-.story-content {
-    padding: 1rem;
-    color: #FFFFFF;
-}
-
-.story-content h1, .story-content p {
-    padding: 0;
-    color: #FFFFFF;
-}
-
-.company-name {
-    font-size: 0.9rem;
-    color: #9d9de8;
+.ss-story__company {
+    font-size: 14px;
+    color: #BB94E5;
     margin-bottom: 1rem;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
-.story-title {
-    font-size: 2.5rem;
+.ss-story__title {
+    font-size: 36px;
+    color: #FFFFFF;
     margin-bottom: 1rem;
-    font-weight: 600;
+    font-family: 'Sora', sans-serif;
+    line-height: 1.2;
 }
 
-.story-description {
+.ss-story__description {
     color: #e0e0e0;
     margin-bottom: 2rem;
     line-height: 1.6;
+    font-size: 16px;
+    max-width: 500px;
 }
 
-.metrics {
+.ss-metrics {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     margin-bottom: 2rem;
 }
 
-.metric {
+.ss-metric {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    color: #FFFFFF;
 }
 
-.metric-icon {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
+.ss-metric::before {
+    content: "✓";
+    color: #BB94E5;
 }
 
-.cta-button {
+.ss-cta {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    background-color: #3a07ba;
+    background-color: #6430C0;
     color: white;
-    padding: 0.8rem 1.5rem;
+    padding: 12px 24px;
     border-radius: 8px;
     text-decoration: none;
     font-weight: 500;
     transition: background-color 0.3s ease;
-    white-space: nowrap;
 }
 
-.cta-button:hover {
-    background-color: #553c9a;
+.ss-cta:hover {
+    background-color: #7440d0;
 }
 
-.screenshot-01, .screenshot-02 {
-    width: 120%;
+.ss-cta::after {
+    content: "→";
+    margin-left: 8px;
+}
+
+.ss-screenshot {
+    flex: 0 0 45%;
     position: relative;
-    min-height: 300px;
-    background-color: #0d051c;
-    border-radius: 40px;
 }
 
-.screenshot-01 img, .screenshot-02 img {
-    width: 95%;
-    height: 71%;
-    object-fit: cover;
-    border-radius: 40px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    margin-top: 60px;
-    margin-left: 9px;
+.ss-screenshot::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15%;
+    height: 4px;
+    background: #E0E0E0;
+    border-radius: 2px;
 }
 
-/* Responsive Design for Screens below 1024px */
-@media (max-width: 1024px) {
-    .success-container {
-        padding: 0 5%;
-    }
-
-    .story-card {
-        flex-direction: row;
-        gap: 1rem;
-        padding: 1.5rem;
-    }
-
-    .story-title {
-        font-size: 2rem;
-    }
-
-    .story-description {
-        font-size: 1rem;
-    }
-
-    .cta-button {
-        padding: 0.7rem 1.2rem;
-    }
-
-    .metrics {
-        gap: 1rem;
-    }
+.ss-screenshot img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    background: rgba(33, 27, 64, 1);
+    border: 15px solid rgba(33, 27, 64, 1);
+    box-shadow: 0 8px 32px rgba(33, 27, 64, 1);
+    backdrop-filter: blur(4px);
 }
 
-/* Responsive Design for Screens below 768px */
 @media (max-width: 768px) {
-    .success-stories {
-        width: 100%;
-        padding: 0 5%;
-    }
-
-    .story-card {
+    .ss-story {
         flex-direction: column;
-        text-align: center;
-        padding: 1.5rem;
+        padding: 24px;
     }
 
-    .screenshot {
-        width: 100%;
-        height: 200px;
-        margin-bottom: 1rem;
+    .ss-story__content {
+        padding-right: 0;
+        margin-bottom: 24px;
     }
 
-    .story-title {
-        font-size: 1.8rem;
+    .ss-screenshot {
+        flex: 0 0 100%;
     }
 
-    .story-description {
-        font-size: 1rem;
-    }
-
-    .metrics {
+    .ss-metrics {
         flex-direction: column;
-        gap: 0.8rem;
-    }
-
-    .cta-button {
-        margin: 0 auto;
-        padding: 0.7rem 1.2rem;
-    }
-}
-
-/* Responsive Design for Screens below 480px */
-@media (max-width: 480px) {
-    .success-stories {
-        padding: 0 2%;
-    }
-
-    .story-card {
-        flex-direction: column;
-        padding: 1rem;
-    }
-
-    .screenshot {
-        width: 100%;
-        height: 150px;
-        margin-bottom: 1rem;
-    }
-
-    .story-title {
-        font-size: 1.5rem;
-        margin-bottom: 0.5rem;
-    }
-
-    .story-description {
-        font-size: 0.85rem;
-    }
-
-    .metrics {
-        gap: 0.6rem;
-    }
-
-    .cta-button {
-        padding: 0.6rem 1rem;
-        font-size: 0.9rem;
+        gap: 1rem;
     }
 }

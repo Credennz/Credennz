@@ -1,15 +1,8 @@
-
 .bg-image {
-    /* background-image: url('/img/img.png'); */
-    
-   
     font-family: Arial, sans-serif;
-            margin: 0px;
-           
-            background-size: cover;
-            background-position: center;
-            color: white
-  }
+    margin: 0;
+    color: white;
+}
 /* Dropdown Menu Styles */
 .dropdown {
     position: relative;
@@ -137,8 +130,8 @@ box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
 .graph-icon-1 {
-    top: 50px;
-    left: 140px;
+    top: 10px;
+    left: 100px;
     transform: rotate(2deg);
 }
 
@@ -190,7 +183,7 @@ p {
     background-color: rgba(255, 255, 255, 0.1);
     padding: 20px;
     border-radius: 12px;
-    width: 27%;
+    width: 32%;
     text-align: left;
     font-weight: lighter;
     font-size: small;
@@ -200,7 +193,16 @@ p {
     perspective: 1000px;
 }
 
-
+.service-card h3{
+    font-size: x-large;
+    padding-bottom: 20px;
+}
+.service-card p{
+    font-size: 1rem;
+        max-width: 600px;
+        margin-bottom: 12px;
+    
+}
 .service-card:hover {
     transform: scale(1.05) rotateY(10deg) rotateX(5deg); 
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4); 
@@ -216,8 +218,10 @@ p {
 .learn-more {
     color: #ffffff;
     text-decoration: none;
-    font-weight: lighter;
+    font-weight: bold;
 }
+
+
 
 
 @media (max-width: 1024px) {
@@ -354,9 +358,10 @@ display: flex; /* Show hamburger menu on small screens */
     }
 
     .graph-icon-1 {
-        top: 91px;
-        left: 20px;
-    }
+        
+            top: 8px;
+            left: 22px;
+        }
 
     .graph-icon-2 {
         bottom: 5px;
@@ -369,7 +374,7 @@ display: flex; /* Show hamburger menu on small screens */
 
     .services {
         padding: 40px;
-        margin-right: 35px;
+      
     }
 
     .cta-btn {

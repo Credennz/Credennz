@@ -1,9 +1,9 @@
 
 .service-nav {
     font-family: Arial, sans-serif;
-    background: linear-gradient(#040309 68.04%, #7920b9, #ffff);
+    background: linear-gradient(#040309 68.04%, #463d60, #532dbc);
     color: white;
-    min-height: 50vh;
+    min-height: 65vh;
     display: flex;
     flex-direction: column;
 }
@@ -51,13 +51,13 @@
     max-width: 100%;
 }
 
-h1 {
+.service_content h1 {
     font-size: 2rem;
     margin-bottom: 1rem;
     line-height: 1.2;
 }
 
-p {
+.service_content p {
     font-size: 1rem;
     color: #cccccc;
     max-width: 100%;
@@ -71,11 +71,11 @@ p {
         max-width: 800px;
     }
 
-    h1 {
+    .service_content h1 {
         font-size: 3.5rem;
     }
 
-    p {
+    .service_content p {
         font-size: 1.25rem;
         max-width: 600px;
     }

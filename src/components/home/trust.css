@@ -1,74 +1,83 @@
 .trusted-by {
-    padding: 5rem 230px;
-    border-bottom: 1px solid #eaeaea;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem 10rem;
     background-color: #FFFFFF;
 }
 
 .trusted-by-title {
     color: #666;
-    font-size: 0.875rem;
+    font-size: 1.875rem;
     text-transform: uppercase;
-    letter-spacing: 0px;
-    margin-bottom: 0rem;
-    text-align: center;
+    margin-bottom: 0;
+    width: 300px;}
+
+.logo-carousel {
+    overflow: hidden; /* Hide overflowing logos */
+    white-space: nowrap; /* Prevent line breaks */
+    width: 100%; /* Full width of the parent */
 }
 
-.logo-grid {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
-    flex-wrap: wrap;
+.logo-track {
+    display: inline-block; /* Allows for horizontal scrolling */
+    animation: scroll 15s linear infinite; /* Animation for scrolling */
 }
 
 .logo-item {
-    opacity: 0.6;
-    transition: opacity 0.3s ease;
-    max-width: 120px;
+    display: inline-block; /* Allows for inline display */
+    max-width: 120px; /* Adjust the logo size */
     height: auto;
+    opacity: 1; /* Full opacity, no hover effect */
 }
 
-.logo-item:hover {
-    opacity: 1;
+/* Continuous scroll animation */
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } /* Move left by 50% to cycle back to start */
 }
 
-/* Responsive Styles */
-
-/* For screen width up to 1024px */
-@media (max-width: 1024px) {
-    .trusted-by {
-        padding: 5rem 150px;
-    }
-    .logo-grid {
-        gap: 1.5rem;
-    }
-}
-
-/* For screen width up to 680px */
+/* Responsive styles */
 @media (max-width: 680px) {
-    .trusted-by {
-        padding: 3rem 50px;
-    }
-    .logo-grid {
-        justify-content: center;
-        gap: 1rem;
-    }
     .logo-item {
-        max-width: 100px;
+        max-width: 80px; /* Adjust logo size for smaller screens */
+    }
+    
+        .trusted-by-title {
+            text-align: center;
+            color: #666;
+            /* font-size: 0.875rem; */
+            text-transform: uppercase;
+            margin-bottom: 0;
+            width: 300px;
+        }
+    .trusted-by {
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        padding: 1rem 0rem;
+        background-color: #FFFFFF;
     }
 }
 
-/* For screen width up to 480px */
 @media (max-width: 480px) {
-    .trusted-by {
-        padding: 2rem 20px;
+    .logo-item {
+        max-width: 60px; /* Further adjust logo size */
     }
-    .logo-grid {
+    
+        .trusted-by-title {
+            text-align: center;
+            color: #666;
+            /* font-size: 0.875rem; */
+            text-transform: uppercase;
+            margin-bottom: 0;
+            width: 300px;
+        }
+    .trusted-by {
+        display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 1rem;
-    }
-    .logo-item {
-        max-width: 80px;
+        padding: 1rem 0rem;
+        background-color: #FFFFFF;
     }
 }

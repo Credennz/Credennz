@@ -16,7 +16,10 @@ export default function Nav() {
     <div
       class="bg-image"
       style={{
-        background: `url('${process.env.PUBLIC_URL}/img/bgimg.jpg')`,
+        backgroundPosition: "center",
+        backgroundImage: `url('${process.env.PUBLIC_URL}/img/bgimg.jpg')`,
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
       }}
     >
       <header className="contactus-navbar">

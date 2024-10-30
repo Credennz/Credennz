@@ -35,13 +35,13 @@ body {
 }
 
 /* Hover effect applied only on individual elements */
-.service-up:hover,
+/* .service-up:hover,
 .service-down:hover,
 .service-up-01:hover {
     transform: translateY(-5px);
-    /* Moves only the hovered element up */
-}
-
+    
+} */
+/* Moves only the hovered element up */
 /* Services box styles */
 .service-up,
 .service-down,
