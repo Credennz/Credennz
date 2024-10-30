@@ -378,8 +378,10 @@ display: flex; /* Show hamburger menu on small screens */
     }
 
     .cta-btn {
-        height: 40px;
+        text-align: center;
+        font-weight: bolder;
+        height: 44px;
         width: 160px;
-        font-size: 16px;
+        font-size: 13px;
     }
 }

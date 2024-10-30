@@ -163,7 +163,10 @@
     .ss-story {
         flex-direction: column;
         padding: 24px;
+       
+        background: radial-gradient(77% 111.4% at 50% 0%, #1C163B -14.78%, #6430C0 72.95%, #BB94E5 88.85%, #FFFFFF 100%);
     }
+    
 
     .ss-story__content {
         padding-right: 0;
