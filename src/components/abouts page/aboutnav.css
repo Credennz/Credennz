@@ -118,6 +118,13 @@
       width: 100%;
       min-width: unset;
     }
+    .about-nav {
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      font-family: Arial, sans-serif;
+      height: 51vh;
+  }
   }
 
   @media (max-width: 1024px) {
