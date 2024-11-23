@@ -7,8 +7,8 @@
 }
 
 .trusted-by-title {
-    color: #666;
-    font-size: 1.875rem;
+    color: #040309;
+    font-size: 0.9rem;
     text-transform: uppercase;
     margin-bottom: 0;
     width: 300px;}
@@ -28,7 +28,8 @@
     display: inline-block; /* Allows for inline display */
     max-width: 120px; /* Adjust the logo size */
     height: auto;
-    opacity: 1; /* Full opacity, no hover effect */
+    opacity: 1;
+    margin-right: 55px; /* Full opacity, no hover effect */
 }
 
 /* Continuous scroll animation */

@@ -21,21 +21,20 @@
 }
 
 .fhero-content p {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     margin-bottom: 30px;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
     font-family: 'Inter', sans-serif;
-    color: #c7CBD4;
 }
 
 .cta-button {
     display: inline-block;
     background: #6430C0;
     color: white;
-    padding: 10px 30px;
+    padding: 8px 8px;
     text-decoration: none;
     border-radius: 8px;
     font-size: 18px;

@@ -13,12 +13,13 @@ import "../components/home/testimonial.css";
 import "../components/servicepage/service";
 import Success from "../components/home/success";
 import "../components/home/success.css";
-import Process from "../components/home/process";
 import Service3 from "../components/servicepage/service3";
 import "../components/servicepage/service3.css";
-import "../components/home/process.css";
+
 import Trust from "../components/home/trust";
 import "../components/home/trust.css";
+import Benefits from "../components/servicepage/benefits";
+import "../components/servicepage/benefits.css"
 import React from "react";
 export default function Service() {
   return (
@@ -28,7 +29,7 @@ export default function Service() {
       <Service3 />
       <Service1 />
       <Service2 />
-      <Process />
+      <Benefits />
       <Success />
       <Testimonial />
       <Footerhero />

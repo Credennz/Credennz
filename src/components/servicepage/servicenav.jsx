@@ -16,7 +16,7 @@ export default function Servicenav() {
     <div class="service-nav">
       <header className="contactus-navbar">
         <nav className="contactus-nav-container">
-          <div className="logo">Credennz</div>
+          <div className="logo"></div>
 
           <div
             className={`hamburger ${isOpen ? "active" : ""}`}
@@ -53,15 +53,15 @@ export default function Servicenav() {
               onMouseEnter={toggleDropdown}
               onMouseLeave={toggleDropdown}
             >
-              <span className="nav-link">Company</span>
+              <span className="nav-link">Case Studies</span>
               <ul className={`dropdown-menu ${dropdownOpen ? "show" : ""}`}>
-                <li>
+                {/* <li>
                   <Link
                     to="/about"
                     className="dropdown-link"
                     onClick={() => setIsOpen(false)}
                   >
-                    About
+                    CaseStudies
                   </Link>
                 </li>
                 <li>
@@ -72,26 +72,26 @@ export default function Servicenav() {
                   >
                     Company Policy
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </li>
 
             <li>
               <Link
-                to="/service"
-                className="nav-link"
+                to="/ Contact"
+                className="Contact"
                 onClick={() => setIsOpen(false)}
               >
-                Service
+                Contact
               </Link>
             </li>
             <li>
               <Link
-                to="/contactus"
+                to="/Get Quote"
                 className="nav-link"
                 onClick={() => setIsOpen(false)}
               >
-                Contact Us
+               Get Quote
               </Link>
             </li>
           </ul>

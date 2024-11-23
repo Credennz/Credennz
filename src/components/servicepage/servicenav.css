@@ -1,11 +1,12 @@
-
 .service-nav {
     font-family: Arial, sans-serif;
-    background: linear-gradient(#040309 68.04%, #463d60, #532dbc);
+    background: linear-gradient(#040309 68.04%, #1a1037, #532dbc);
     color: white;
-    min-height: 65vh;
+    min-height: 60vh;
     display: flex;
     flex-direction: column;
+    height: 37px;
+    padding-bottom: 69px;
 }
 .Service-nav-main.stars {
     position: absolute;
@@ -38,13 +39,14 @@
     z-index: -1;
   }
 
-.Service-nav-main {
+.Service-nav-main  {
     flex-grow: 1;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     padding: 1rem;
+    
 }
 
 .service_content {
@@ -55,11 +57,13 @@
     font-size: 2rem;
     margin-bottom: 1rem;
     line-height: 1.2;
+    font-family: 'Sora';
+    font-weight: 400;
 }
 
 .service_content p {
     font-size: 1rem;
-    color: #cccccc;
+    color: #C7CBD4;
     max-width: 100%;
     margin: 0 auto;
 }
@@ -76,9 +80,7 @@
     }
 
     .service_content p {
-        font-size: 1.25rem;
+        font-size: 1rem;
         max-width: 600px;
     }
 }
-
-

@@ -46,13 +46,13 @@ export default function Nav() {
               </Link>
             </li>
             <li>
-              <a
-                href="#services"
+              <Link
+                to="/service"
                 className="nav-link"
                 onClick={() => setIsOpen(false)}
               >
-                Services
-              </a>
+                Service
+              </Link>
             </li>
 
             {/* Dropdown for Company */}
@@ -61,7 +61,7 @@ export default function Nav() {
               onMouseEnter={toggleDropdown}
               onMouseLeave={toggleDropdown}
             >
-              <span className="nav-link">Company</span>
+              <span className="nav-link" >Company</span>
               <ul className={`dropdown-menu ${dropdownOpen ? "show" : ""}`}>
                 <li>
                   <Link
@@ -82,6 +82,7 @@ export default function Nav() {
                   </Link>
                 </li>
               </ul>
+              
             </li>
 
             <li>
@@ -90,7 +91,7 @@ export default function Nav() {
                 className="nav-link"
                 onClick={() => setIsOpen(false)}
               >
-                Service
+                Portfolio
               </Link>
             </li>
             <li>

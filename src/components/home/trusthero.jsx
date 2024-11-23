@@ -13,7 +13,9 @@ export default function TrustHero() {
       <div className="hero-section-content">
         <span className="hero-section-tag">WE BUILD , WE DELIVER</span>
         <h1 className="hero-section-title">
-          Developing custom AI and Tech solutions for innovative companies
+          Developing custom <br/>
+          AI and Tech solutions<br/>
+           for innovative<br/> companies
         </h1>
         <p className="hero-section-description">
           Our organization is dedicated to providing tailored technology

@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function testimonial() {
   return (
-    <div>
+    <div class="h-hint"> 
         <div class="h-testimonials-container">
             <div class="testimonials-header">
                 <h6>TESTIMONIALS</h6>
@@ -23,7 +23,7 @@ export default function testimonial() {
                         </div>
                         <div class="author-info">
                             <p class="author-name">Alex Rodriguez</p>
-                            <p class="author-title">Director of Operations, Global</p>
+                            <p class="author-title">Director of Operations, Global Ventures inc</p>
                         </div>
                     </div>
                 </div>
@@ -31,8 +31,8 @@ export default function testimonial() {
                 {/* <!-- Testimonial 2 --> */}
                 <div class="h-testimonial-card h-testimonial-card2">
                     <div class="h-testimonial-content">
-                        "They transformed our business! Their creative solutions and strategic planning led to consistent
-                        growth."
+                        "They transformed our business!
+                        Their creative solutions and strategic approach boosted online presence and drove significant customer growth."
                     </div>
                     <hr/>
                     <div class="h-testimonial-author">
@@ -41,7 +41,7 @@ export default function testimonial() {
                         </div>
                         <div class="author-info">
                             <p class="author-name">Jake Thompson</p>
-                            <p class="author-title">Founder & CEO, Digital Trends</p>
+                            <p class="author-title">Founder & CEO, Digital Trends solutions</p>
                         </div>
                     </div>
                 </div>
@@ -58,7 +58,7 @@ export default function testimonial() {
                         </div>
                         <div class="author-info">
                             <p class="author-name">Emily Chen</p>
-                            <p class="author-title">E-commerce Entrepreneur, Lead</p>
+                            <p class="author-title">E-commerce Entrepreneur, Luxe Styles Boutique </p>
                         </div>
                     </div>
                 </div>
@@ -68,7 +68,7 @@ export default function testimonial() {
                 {/* <!-- Testimonial 4 --> */}
                 <div class="h-testimonial-card h-testimonial-card4">
                     <div class="h-testimonial-content">
-                        "Our online presence has skyrocketed since we started working with them."
+                        "Our online presence has skyrocketed since we started Couldn,t be happier."
                     </div>
                     <hr/>
                     <div class="h-testimonial-author">
@@ -77,7 +77,7 @@ export default function testimonial() {
                         </div>
                         <div class="author-info">
                             <p class="author-name">Samantha Williams</p>
-                            <p class="author-title">Marketing Manager, Tech</p>
+                            <p class="author-title">Marketing Manager, Tech innovate Co.</p>
                         </div>
                     </div>
                 </div>
@@ -95,7 +95,7 @@ export default function testimonial() {
                         <div class="author-info">
                             <p class="author-name">Sophie Patel</p>
                             <p class="author-title">Founder
-                                , Urban Food Feed</p>
+                                , Urban bites Food truck.co </p>
                         </div>
                     </div>
                 </div>
@@ -103,7 +103,7 @@ export default function testimonial() {
                 {/* <!-- Testimonial 6 --> */}
                 <div class="h-testimonial-card h-testimonial-card6">
                     <div class="h-testimonial-content">
-                        "Exceptional analytics! Their insights revolutionized our marketing."
+                        "Exceptional analytics! Their insights revolutionized our marketing approach."
                     </div>
                     <hr/>
                     <div class="h-testimonial-author">
@@ -112,7 +112,7 @@ export default function testimonial() {
                         </div>
                         <div class="author-info">
                             <p class="author-name">Chris Reynolds</p>
-                            <p class="author-title">VP of Sales, Data Driven</p>
+                            <p class="author-title">VP of Sales, Data Driven Solutions</p>
                         </div>
                     </div>
                 </div>

@@ -1,8 +1,5 @@
-/* MeetTheFounders.css */
-
-
 .mf-container {
-  padding: 2rem;
+  padding: 1rem;
   max-width: 1200px;
   margin: 0 auto;
   line-height: 1.6rem;
@@ -13,10 +10,12 @@
   margin-bottom: 3rem;
 }
 
-.mf-section-header h1 {
-  font-size: 2.5rem;
-  color: #333;
+.mf-section-header h3 {
+  font-size: 1.5rem;
+  color: #131212;
   margin-bottom: 1rem;
+  font-family: sora;
+  font-weight: 400;
 }
 
 .mf-section-header p {
@@ -65,7 +64,7 @@
 }
 
 .mf-founder-info h3 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   color: #333;
   margin-bottom: 0.5rem;
 }
@@ -97,7 +96,7 @@
   color: #333;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .mf-founders-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;

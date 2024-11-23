@@ -29,7 +29,7 @@ export default function FAQ() {
                 <div className="faq-question" onClick={() => toggleFAQ(index)}>
                   <h3>{item.question}</h3>
                   <span className="faq-toggle">
-                    {openIndex === index ? "-" : "+"}
+                    {openIndex === index ? "+" : "+"}
                   </span>
                 </div>
                 {openIndex === index && (

@@ -28,7 +28,7 @@
     color: #7c3aed;
     font-size: 0.75rem;
     font-weight: 600;
-    margin-bottom: 1rem;
+    margin-bottom: -2rem;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -36,12 +36,14 @@
 .hero-section-title {
     font-size: 2rem;
     line-height: 1.2;
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
     color: #1a1a1a;
+    font-family: 'Sora';
+    font-weight: 400;
 }
 
 .hero-section-description {
-    color: #666;
+    color: #2f2a2a;
     width: none;
     font-size: 1rem;
     line-height: 1.6;
@@ -50,14 +52,18 @@
 
 .hero-section-cta-button {
     display: inline-block;
-    background-color: #7c3aed;
-    color: white;
-    padding: 0.75rem 1.5rem;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: background-color 0.3s ease;
+  background-color: #784ac6;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 15px;
+  text-decoration: none;
+  font-weight: 508;
+  transition: background-color 0.3s ease;
+  height: 40px;
+  width: 153px;
+  text-align: center;
 }
+
 
 .hero-section-cta-button:hover {
     background-color: #6d28d9;
@@ -95,6 +101,8 @@
 
     .hero-section-cta-button {
         padding: 0.5rem 1rem;
+        margin-left: 120px;
+    
     }
 }
 

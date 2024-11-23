@@ -1,23 +1,21 @@
-body {
-    font-family: 'Sora', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .h-process h1 {
     text-align: center;
     font-family: 'Sora';
     font-size: 2rem;
     margin-bottom: 20px;
+    font-weight: 400;
 }
 
 .h-process h6 {
     text-align: center;
     color: #6430C0;
-    font-family: 'Inter';
+    /* font-family: 'Inter'; */
     margin-bottom: 10px;
     font-size: 20px;
+    font-weight: 400;
+}
+.h-process p{
+    font-size: 12px;
 }
 
 /* Layout for larger screens */
@@ -34,8 +32,8 @@ body {
     flex: 1;
     min-width: 200px;
     max-width: 300px;
-    background-color: #e0e0e0;
-    border-radius: 8px;
+    background-color: #F8F8F9;
+    border-radius: 12px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     padding: 20px;
@@ -48,16 +46,24 @@ body {
 .step-number {
     font-size: 90px;
     font-weight: bold;
-    color: #6c63ff;
     margin-bottom: -25px;
     margin-left: -210px;
     margin-top: -30px;
     font-family: 'Inter';
+    color: #6430C0;
 }
+.step-number .p-btn img{
+    width: 37px;
+    height: 56px;
+    margin-left: -13px;
+}
+
+
 
 .step img {
     width: 160px;
-    height: 90px;
+    height: 133px;
+    margin-top: -42px;
 }
 
 /* Responsive for screens below 1024px */
@@ -92,7 +98,8 @@ body {
 
     .step-number {
         font-size: 72px;
-        margin-left: -150px;
+        margin-left: -214px;
+        margin-top: -7px;
     }
 
     .h-process h1 {
@@ -105,7 +112,11 @@ body {
 
     .step img {
         width: 160px;
-        height: 120px;
+        height: 145px;
+    }
+    .step-number .p-btn img{
+       
+        margin-left: 12px;
     }
 }
 
@@ -124,7 +135,8 @@ body {
 
     .step-number {
         font-size: 48px;
-        margin-left: -100px;
+        margin-left: -200px;
+        margin-top: -7px;
     }
 
     .h-process h1 {
@@ -137,6 +149,21 @@ body {
 
     .step img {
         width: 140px;
-        height: 100px;
+        height: 102px;
+        margin-left: 15px;
+        margin-top: 15px;
     }
+    .step-number .p-btn img{
+        width: 37px;
+        height: 56px;
+        margin-left: 3px;
+    }
+}
+@media (max-width: 820px){
+    .step-number .p-btn img{
+        width: 37px;
+        height: 56px;
+        margin-left: 36px;
+    }
+
 }

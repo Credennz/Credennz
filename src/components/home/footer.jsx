@@ -7,34 +7,34 @@ export default function Footer() {
         <div class="footer-content">
           <div class="footer-section">
             <h3>Credennz</h3>
-            <p>Build a powerful systems with Credennz.</p>
+            <p id="ftr-setP">Build a powerful systems <br/> with Credennz.</p>
           </div>
           <div class="footer-section">
             <h3>Pages</h3>
             <ul>
-              <a href="">
+              <a href="" className="nav-link">
                 <li>Home</li>
               </a>
-              <a href="">
+              <a href="" className="nav-link">
                 {" "}
                 <li>Services</li>
               </a>
-              <a href="">
+              <a href="" className="nav-link">
                 {" "}
                 <li>Case Studies</li>
               </a>
-              <a href="">
+              <a href="" className="nav-link">
                 {" "}
                 <li>Contact</li>
               </a>
-              <a href="">
+              <a href="" className="nav-link">
                 <li>404</li>
               </a>
             </ul>
           </div>
           <div class="footer-section">
             <h3>Contact</h3>
-            <p>Contact info goes here</p>
+            <p id="ctn">Contact info goes here</p>
           </div>
           <div class="footer-section">
             <h3>Follow us</h3>
@@ -60,7 +60,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <p>&copy; Credennz. All rights reserved.</p>
+        <p id="copy">&copy; Credennz. All rights reserved.</p>
       </div>
     </footer>
   );

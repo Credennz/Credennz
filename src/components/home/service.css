@@ -17,16 +17,23 @@ body {
 
 .p-container h1 {
     color: #000;
-    font-size: 2rem;
+    font-size: 46px;
+    font-family: 'Sora';
+    font-weight: 400;
 }
 
 /* Container padding */
 .p-container {
-    padding: 5rem 1rem;
+    padding: 5rem 2.1rem;
 }
 
 /* Grid layouts */
-.services-01,
+.services-01 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 41px;
+    margin-bottom: 40px;
+}
 .services-02 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));

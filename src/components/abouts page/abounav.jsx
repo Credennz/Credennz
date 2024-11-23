@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 export default function Abounav() {
   const [isOpen, setIsOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
-
+ 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-
+ 
   const toggleDropdown = () => {
     setDropdownOpen((prevDropdownOpen) => !prevDropdownOpen);
   };
@@ -15,13 +15,13 @@ export default function Abounav() {
     <div
       class="about-nav"
       style={{
-        background: `url('${process.env.PUBLIC_URL}/img/bg.png')`,
+        background: `url('${process.env.PUBLIC_URL}/img/abtbg.svg')`,
       }}
     >
       <header className="contactus-navbar">
         <nav className="contactus-nav-container">
-          <div className="logo">Credennz</div>
-
+          {/* <div className="logo">Credennz</div> */}
+ 
           <div
             className={`hamburger ${isOpen ? "active" : ""}`}
             onClick={toggleMenu}
@@ -30,7 +30,7 @@ export default function Abounav() {
             <span></span>
             <span></span>
           </div>
-
+ 
           <ul className={`nav-menu ${isOpen ? "active" : ""}`} id="nav-links">
             <li>
               <Link
@@ -42,15 +42,15 @@ export default function Abounav() {
               </Link>
             </li>
             <li>
-              <a
-                href="#services"
+              <Link
+                to="/service"
                 className="nav-link"
                 onClick={() => setIsOpen(false)}
               >
-                Services
-              </a>
+               Service
+              </Link>
             </li>
-
+ 
             {/* Dropdown for Company */}
             <li
               className="dropdown"
@@ -74,19 +74,19 @@ export default function Abounav() {
                     className="dropdown-link"
                     onClick={() => setIsOpen(false)}
                   >
-                    Company Policy
+                    Case Studies
                   </Link>
                 </li>
               </ul>
             </li>
-
+ 
             <li>
               <Link
-                to="/service"
+                to="/Contactus"
                 className="nav-link"
                 onClick={() => setIsOpen(false)}
               >
-                Service
+                Contact
               </Link>
             </li>
             <li>
@@ -95,7 +95,7 @@ export default function Abounav() {
                 className="nav-link"
                 onClick={() => setIsOpen(false)}
               >
-                Contact Us
+                Get Quote
               </Link>
             </li>
           </ul>
@@ -113,7 +113,7 @@ export default function Abounav() {
             alt="Graph Icon"
             class="tp-graph-icon tp-graph-icon-2"
           />
-
+ 
           <h1>Our Team is Your Team</h1>
           <p>Innovating with purpose, crafting bespoke tech solutions</p>
         </div>

@@ -39,45 +39,9 @@ export default function Navbar() {
                 Home
               </Link>
             </li>
-            <li>
-              <a
-                href="#services"
-                className="nav-link"
-                onClick={() => setIsOpen(false)}
-              >
-                Services
-              </a>
-            </li>
+           
 
             {/* Dropdown for Company */}
-            <li
-              className="dropdown"
-              onMouseEnter={toggleDropdown}
-              onMouseLeave={toggleDropdown}
-            >
-              <span className="nav-link">Company</span>
-              <ul className={`dropdown-menu ${dropdownOpen ? "show" : ""}`}>
-                <li>
-                  <Link
-                    to="/about"
-                    className="dropdown-link"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    About
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/company-policy"
-                    className="dropdown-link"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    Company Policy
-                  </Link>
-                </li>
-              </ul>
-            </li>
-
             <li>
               <Link
                 to="/service"
@@ -87,6 +51,28 @@ export default function Navbar() {
                 Service
               </Link>
             </li>
+
+            <li>
+              <a
+                href="#services"
+                className="nav-link"
+                onClick={() => setIsOpen(false)}
+              >
+                Case Studies
+              </a>
+            </li>
+
+            
+              <li>
+              <a
+                href="#services"
+                className="nav-link"
+                onClick={() => setIsOpen(false)}
+              >
+                Contact
+              </a>
+            </li>
+           
             <li>
               <Link
                 to="/contactus"
@@ -107,10 +93,24 @@ export default function Navbar() {
           </h1>
           <div className="contact-form-info">
             <div className="contact-form-info-item">
-              <span className="contact-form-icon">📧</span> hello@credennz.com
+              <img
+                src="\img\imagexty.svg"
+                alt="Phone Icon"
+                className="icon-image"
+              />
+              <div className="sts">
+              hello@credennz.com
+              </div>
             </div>
             <div className="contact-form-info-item">
-              <span className="contact-form-icon">📞</span> +91 7978013108
+              <img
+                src="\img\imagextx.svg"
+                alt="Phone Icon"
+                className="icon-image"
+              />
+               <div className="sts">
+               +917978013108
+               </div>
             </div>
           </div>
           <form className="contact-form">
@@ -127,7 +127,7 @@ export default function Navbar() {
               />
             </div>
             <textarea
-              placeholder="Your message"
+              placeholder=""
               className="contact-form-textarea"
             ></textarea>
             <button type="submit" className="contact-form-button">
