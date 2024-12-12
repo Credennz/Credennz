@@ -14,9 +14,9 @@ export default function Servicenav() {
   };
   return (
     <div class="service-nav">
-      <header className="contactus-navbar">
+       <header className="contactus-navbar">
         <nav className="contactus-nav-container">
-          <div className="logo"></div>
+          <div className="logo">Credennz</div>
 
           <div
             className={`hamburger ${isOpen ? "active" : ""}`}
@@ -38,13 +38,13 @@ export default function Servicenav() {
               </Link>
             </li>
             <li>
-              <a
-                href="#services"
+              <Link
+                to="/service"
                 className="nav-link"
                 onClick={() => setIsOpen(false)}
               >
-                Services
-              </a>
+                Service
+              </Link>
             </li>
 
             {/* Dropdown for Company */}
@@ -53,15 +53,15 @@ export default function Servicenav() {
               onMouseEnter={toggleDropdown}
               onMouseLeave={toggleDropdown}
             >
-              <span className="nav-link">Case Studies</span>
+              <span className="nav-link" >Company</span>
               <ul className={`dropdown-menu ${dropdownOpen ? "show" : ""}`}>
-                {/* <li>
+                <li>
                   <Link
                     to="/about"
                     className="dropdown-link"
                     onClick={() => setIsOpen(false)}
                   >
-                    CaseStudies
+                    About
                   </Link>
                 </li>
                 <li>
@@ -72,32 +72,41 @@ export default function Servicenav() {
                   >
                     Company Policy
                   </Link>
-                </li> */}
+                </li>
+                <li>
+                  <Link
+                    to="/company-policy"
+                    className="dropdown-link"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    Case Studies
+                  </Link>
+                </li>
               </ul>
+              
             </li>
 
             <li>
               <Link
-                to="/ Contact"
-                className="Contact"
+                to="/service"
+                className="nav-link"
                 onClick={() => setIsOpen(false)}
               >
-                Contact
+                Portfolio
               </Link>
             </li>
             <li>
               <Link
-                to="/Get Quote"
+                to="/contactus"
                 className="nav-link"
                 onClick={() => setIsOpen(false)}
               >
-               Get Quote
+                Contact Us
               </Link>
             </li>
           </ul>
         </nav>
       </header>
-
       <div class="Service-nav-main">
         <div className="stars"></div>
         <div class="service_content">

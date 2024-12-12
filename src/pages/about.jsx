@@ -7,16 +7,15 @@ import Footer from "../components/home/footer";
 import "../components/home/footer.css";
 import AboutFooterhero from "../components/abouts page/aboutsfooterhero";
 import "../components/abouts page/aboutsfooterhero.css";
-import Trusthero from "../components/home/trusthero";
-import "../components/home/trusthero.css";
 import Abouttest from "../components/abouts page/abouttest";
-
+import Trustcard from "../components/abouts page/trustcard";
+import "../components/abouts page/trustcard.css"
 export default function About() {
   return (
     <div>
       <Abounav />
       <Abouttest />
-      <Trusthero />
+      <Trustcard/>
       <MeetTheFounders />
       <VideoPlayer />
       <AboutFooterhero />

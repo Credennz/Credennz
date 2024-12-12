@@ -8,13 +8,13 @@ export default function Service2() {
           <img src="img/sv2.jpg" alt="Person using sm2artphone" />
         </div>
         <div class="sm2-content">
-          <div class="sm2-subtitle">TURNING IDEAS INTO IMPACT</div>
-          <h1>Custom Development</h1>
+          <div class="sm2-subtitle">maintain and optimize</div>
+          <h1>Maintenance and support</h1>
           <p>
-            With a focus on ROI, we deploy strategic digital marketing tactics
-            that not only increase your online presence but also convert clicks
-            into customers, providing a comprehensive solution for sustainable
-            growth.
+            Ensure your systems run smoothly with our comprehensive services,
+            including <b>Performance Monitoring </b>for real-time insights, <b>Development
+            Support </b>to resolve technical challenges, and<b> System Optimization</b> to
+            enhance efficiency and reliability.
           </p>
           <a href="#" class="sm2-botton">
             Talk Now

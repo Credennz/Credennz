@@ -18,19 +18,21 @@
 }
  
 .sm1-content h1 {
-  font-size: 2.5em;
+  font-size: 2.2em;
   font-family: 'Sora';
   margin-bottom: 10px;
-  color: #333;
+  color: #040309;
   font-weight: 400;
 }
  
 .sm1-content p {
-  color:rgba(4,3,9,1);
+  color: #040309;
   font-family: 'Inter';
-  font-weight: 500;
+  font-weight: 400;
   margin-top: 25px;
-  line-height: 1.6;
+  font-size: 0.9rem;
+  width: 83%;
+  line-height: 1.6
 }
  
 .sm1-botton {
@@ -44,7 +46,7 @@
   color: white;
   text-decoration: none;
   align-items: center;
-  border-radius: 15px;
+  border-radius: 12px;
   transition: background-color 0.3s;
 }
  
@@ -70,11 +72,12 @@
   margin-bottom: 10px;
   letter-spacing: 1px;
   font-weight: 600;
+  text-transform: uppercase;
 }
 @media (max-width: 768px) {
   .sm1-container {
     flex-direction: column;
-    text-align: center;
+    /* text-align: center; */
   }
  
   .sm1-content,

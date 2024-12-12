@@ -116,5 +116,6 @@
     .get-template-btn {
         font-size: 16px;
         padding: 12px;
+        width: 83%;
     }
 }

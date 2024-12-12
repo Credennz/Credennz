@@ -5,11 +5,14 @@ export default function Service1() {
     <div>
       <div class="sm1-container">
         <div class="sm1-content">
-          <div class="sm1-subtitle">TURNING IDEAS INTO IMPACT</div>
-          <h1>Lorem Ipsum</h1>
+          <div class="sm1-subtitle">Turning Ideas into Impact</div>
+          <h1>Custom software development</h1>
           <p>
-            Aenean euism1od nunc et euism1od felis erase dolor dignissim vel eu.
-            Praesent sed dui. Etiam faucibus Advertising.
+            Empower your business with tailored software solutions. We develop
+            high-performance <b>Mobile and Web Applications</b> to meet your unique
+            needs, create<b> SaaS, ERP, and CRM systems </b>for streamlined operations,
+            and <b>modernize Legacy Systems </b>to enhance functionality and
+            compatibility with the latest technologies.
           </p>
           <a href="#" class="sm1-botton">
             Read More

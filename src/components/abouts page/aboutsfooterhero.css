@@ -13,8 +13,10 @@
 }
 
 .fhero-content h1 {
+   
+    color: #ffffff;
     justify-content: center;
-    font-size: 72px;
+    font-size: 55px;
     font-weight: 300;
     margin-bottom: 20px;
     font-family: 'Sora', sans-serif;
@@ -56,7 +58,7 @@
     }
 
     .get-template-btn {
-        width: 80%;
+        width: 50%;
     }
 }
 
@@ -70,7 +72,7 @@
     }
 
     .get-template-btn {
-        width: 90%;
+        width: 50%;
     }
 
     .footer-content {

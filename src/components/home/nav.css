@@ -3,13 +3,13 @@
     margin: 0;
     color: white;
 }
-/* Dropdown Menu Styles */
 .dropdown {
     position: relative;
+    cursor: pointer;
   }
  
   .dropdown-menu {
-    position: absolute;
+    position: relative;
     top: 100%;
     left: 0;
     display: none;
@@ -19,6 +19,7 @@
     border-radius: 6px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 10;
+    min-width: 200px;
   }
  
   .dropdown-menu.show {
@@ -32,6 +33,7 @@
     font-size: 0.9rem;
     transition: background 0.3s ease;
     width: 100%;
+    display: block;
   }
  
   .dropdown-link:hover {
@@ -51,6 +53,10 @@ header {
 .hd{
     position: relative;
     text-align: center;
+ }
+ .hd p{
+    color: #C7CBD4;
+    line-height: 24px;
  }
  
 nav {
@@ -195,8 +201,10 @@ p {
 }
  
 .service-card h3{
-    font-size: larger;
+    font-size: 18px;
     padding-bottom: 20px;
+    font-family: 'Sora';
+    font-weight: 400;
     margin-left: 14px;
 }
 .service-card p{
@@ -206,6 +214,8 @@ p {
     margin-bottom: 13px;
     margin-left: 14px;
     line-height: 20px;
+    font-family: 'inter';
+    color: #ffffff;
    
 }
 .service-card:hover {
@@ -223,7 +233,9 @@ p {
 .learn-more {
     color: #ffffff;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'inter';
     margin-left: 14px;
 }
  
@@ -290,7 +302,7 @@ p {
         width: 30%;
     }
 }
-/* Hamburger Menu (hidden by default) */
+/* Hamburger Menu (hidden by default) */ 
 .hamburger {
 display: none;
 cursor: pointer;
@@ -299,11 +311,12 @@ justify-content: space-between;
 width: 30px;
 height: 20px;
 }
- 
 .hamburger div {
 width: 100%;
 height: 3px;
 background-color: white;
+transition: all 0.8s ease;
+
 }
  
 /* Responsive styles */

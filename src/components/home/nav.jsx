@@ -81,6 +81,15 @@ export default function Nav() {
                     Company Policy
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    to="/company-policy"
+                    className="dropdown-link"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    Case Studies
+                  </Link>
+                </li>
               </ul>
               
             </li>

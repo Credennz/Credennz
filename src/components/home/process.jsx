@@ -14,7 +14,8 @@ export default function process() {
                 </div>
                 <img src="/img/img-01.png" alt="Analyze" />
                 <h3>Analyze</h3>
-                <p>Captivating ad copy for action-driven results.</p>
+                <p>Captivating ad copy for action-<br/>
+                driven results.</p>
             </div>
             <div class="step">
                 <div class="step-number">
@@ -34,7 +35,8 @@ export default function process() {
                 </div>
                 <img src="/img/img-03.png" alt="Maintain and Improve" />
                 <h3>Maintain and Improve</h3>
-                <p>Pinpoint your ideal audience with precision.</p>
+                <p>Pinpoint your ideal audience with<br/>
+                 precision.</p>
             </div>
         </div>
     </div>

@@ -18,10 +18,10 @@ export default function Abounav() {
         background: `url('${process.env.PUBLIC_URL}/img/abtbg.svg')`,
       }}
     >
-      <header className="contactus-navbar">
+       <header className="contactus-navbar">
         <nav className="contactus-nav-container">
-          {/* <div className="logo">Credennz</div> */}
- 
+          <div className="logo">Credennz</div>
+
           <div
             className={`hamburger ${isOpen ? "active" : ""}`}
             onClick={toggleMenu}
@@ -30,7 +30,7 @@ export default function Abounav() {
             <span></span>
             <span></span>
           </div>
- 
+
           <ul className={`nav-menu ${isOpen ? "active" : ""}`} id="nav-links">
             <li>
               <Link
@@ -47,17 +47,17 @@ export default function Abounav() {
                 className="nav-link"
                 onClick={() => setIsOpen(false)}
               >
-               Service
+                Service
               </Link>
             </li>
- 
+
             {/* Dropdown for Company */}
             <li
               className="dropdown"
               onMouseEnter={toggleDropdown}
               onMouseLeave={toggleDropdown}
             >
-              <span className="nav-link">Company</span>
+              <span className="nav-link" >Company</span>
               <ul className={`dropdown-menu ${dropdownOpen ? "show" : ""}`}>
                 <li>
                   <Link
@@ -74,19 +74,29 @@ export default function Abounav() {
                     className="dropdown-link"
                     onClick={() => setIsOpen(false)}
                   >
+                    Company Policy
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/company-policy"
+                    className="dropdown-link"
+                    onClick={() => setIsOpen(false)}
+                  >
                     Case Studies
                   </Link>
                 </li>
               </ul>
+              
             </li>
- 
+
             <li>
               <Link
-                to="/Contactus"
+                to="/service"
                 className="nav-link"
                 onClick={() => setIsOpen(false)}
               >
-                Contact
+                Portfolio
               </Link>
             </li>
             <li>
@@ -95,7 +105,7 @@ export default function Abounav() {
                 className="nav-link"
                 onClick={() => setIsOpen(false)}
               >
-                Get Quote
+                Contact Us
               </Link>
             </li>
           </ul>

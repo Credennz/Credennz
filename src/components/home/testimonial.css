@@ -1,12 +1,12 @@
 hr{
-    background-color: rgb(227,227,232);
+    background-color: #E3E3E8;
 }
 .h-testimonials-container {
     background-color: transparent;
     max-width: 1200px;
    
     display: flex;
-    padding: 40px 20px;
+    padding: 100px 20px;
     align-items: center;
     font-family: Arial, sans-serif;
     flex-direction: column;
@@ -35,10 +35,11 @@ hr{
 
 .testimonials-header h1 {
   
-    font-weight: 300;
+    font-weight: 400;
     font-size: 40px;
-    color: #333;
+    color: #040309;
     margin: 0;
+    font-family: 'sora';
 }
 
 .h-testimonials-subheader {
@@ -74,11 +75,12 @@ hr{
 
 .h-testimonial-content {
     text-align: left;
-    color: #555;
-    font-size: 16px;
+    color: #040309;
+    font-size: 15px;
     line-height: 1.6;
     margin-bottom: 20px;
     min-height: 60px;
+    opacity: 0.8;
 }
 
 .h-testimonial-author {
@@ -104,6 +106,7 @@ hr{
 
 .author-info {
     text-align: left;
+    width: 78%;
 }
 
 .author-name {
@@ -114,9 +117,10 @@ hr{
 }
 
 .author-title {
-    color: #666;
+    color: #040309;
     font-size: 14px;
     margin: 4px 0 0 0;
+    opacity: 0.7;
 }
 
 @media (max-width: 900px) {

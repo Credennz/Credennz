@@ -3,7 +3,7 @@ import React from 'react'
 export default function Benefits() {
   return (
     <div class="hp-process">
-        <h6>Benefits</h6>
+        <h6>BENEFITS</h6>
         <h1>Crafting Digital <br/>Experiences That Resonate</h1>
        
         <div class="mp-process">

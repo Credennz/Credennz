@@ -12,22 +12,19 @@ export default function Footer() {
           <div class="footer-section">
             <h3>Pages</h3>
             <ul>
-              <a href="" className="nav-link">
+              <a href="" className="nav-lin">
                 <li>Home</li>
               </a>
-              <a href="" className="nav-link">
-                {" "}
+              <a href="" className="nav-lin">
                 <li>Services</li>
               </a>
-              <a href="" className="nav-link">
-                {" "}
+              <a href="" className="nav-lin">
                 <li>Case Studies</li>
               </a>
-              <a href="" className="nav-link">
-                {" "}
+              <a href="" className="nav-lin">
                 <li>Contact</li>
               </a>
-              <a href="" className="nav-link">
+              <a href="" className="nav-lin">
                 <li>404</li>
               </a>
             </ul>

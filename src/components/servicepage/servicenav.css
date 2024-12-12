@@ -1,43 +1,16 @@
 .service-nav {
     font-family: Arial, sans-serif;
-    background: linear-gradient(#040309 68.04%, #1a1037, #532dbc);
+    /* background: linear-gradient(#040309 68.04%, #1a1037, #532dbc); */
     color: white;
     min-height: 60vh;
     display: flex;
     flex-direction: column;
     height: 37px;
     padding-bottom: 69px;
+    background-image: url("imageT.jpg.svg");
+    background-size: cover;
 }
-.Service-nav-main.stars {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image:
-      radial-gradient(1px 1px at 25% 15%, white 1px, transparent 0),
-      radial-gradient(1px 1px at 50% 25%, white 1px, transparent 0),
-      radial-gradient(1px 1px at 75% 5%, white 1px, transparent 0),
-      radial-gradient(1px 1px at 10% 35%, white 1px, transparent 0),
-      radial-gradient(1px 1px at 20% 45%, white 1px, transparent 0),
-      radial-gradient(1px 1px at 30% 55%, white 1px, transparent 0),
-      radial-gradient(1px 1px at 40% 65%, white 1px, transparent 0),
-      radial-gradient(1px 1px at 60% 75%, white 1px, transparent 0),
-      radial-gradient(1px 1px at 70% 85%, white 1px, transparent 0),
-      radial-gradient(1px 1px at 80% 5%, white 1px, transparent 0),
-      radial-gradient(1px 1px at 90% 15%, white 1px, transparent 0),
-      radial-gradient(1px 1px at 15% 25%, white 1px, transparent 0),
-      radial-gradient(1px 1px at 35% 35%, white 1px, transparent 0),
-      radial-gradient(1px 1px at 45% 45%, white 1px, transparent 0),
-      radial-gradient(1px 1px at 55% 55%, white 1px, transparent 0),
-      radial-gradient(1px 1px at 65% 65%, white 1px, transparent 0),
-      radial-gradient(1px 1px at 75% 75%, white 1px, transparent 0),
-      radial-gradient(1px 1px at 85% 85%, white 1px, transparent 0),
-      radial-gradient(1px 1px at 95% 95%, white 1px, transparent 0);
-    opacity: 0.5;
-    pointer-events: none;
-    z-index: -1;
-  }
+
 
 .Service-nav-main  {
     flex-grow: 1;
@@ -82,5 +55,15 @@
     .service_content p {
         font-size: 1rem;
         max-width: 600px;
+    }
+    .service_content p {
+        font-size: 0.8rem;
+      
+    }
+}
+@media screen,(max-width:480px) {
+    .service_content p {
+        font-size: 0.8rem;
+      
     }
 }

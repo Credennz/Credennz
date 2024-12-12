@@ -16,7 +16,7 @@ export default function Navbar() {
 
   return (
     <div className="nv">
-      <header className="contactus-navbar">
+       <header className="contactus-navbar">
         <nav className="contactus-nav-container">
           <div className="logo">Credennz</div>
 
@@ -39,9 +39,6 @@ export default function Navbar() {
                 Home
               </Link>
             </li>
-           
-
-            {/* Dropdown for Company */}
             <li>
               <Link
                 to="/service"
@@ -52,27 +49,54 @@ export default function Navbar() {
               </Link>
             </li>
 
-            <li>
-              <a
-                href="#services"
-                className="nav-link"
-                onClick={() => setIsOpen(false)}
-              >
-                Case Studies
-              </a>
+            {/* Dropdown for Company */}
+            <li
+              className="dropdown"
+              onMouseEnter={toggleDropdown}
+              onMouseLeave={toggleDropdown}
+            >
+              <span className="nav-link" >Company</span>
+              <ul className={`dropdown-menu ${dropdownOpen ? "show" : ""}`}>
+                <li>
+                  <Link
+                    to="/about"
+                    className="dropdown-link"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    About
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/company-policy"
+                    className="dropdown-link"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    Company Policy
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/company-policy"
+                    className="dropdown-link"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    Case Studies
+                  </Link>
+                </li>
+              </ul>
+              
             </li>
 
-            
-              <li>
-              <a
-                href="#services"
+            <li>
+              <Link
+                to="/service"
                 className="nav-link"
                 onClick={() => setIsOpen(false)}
               >
-                Contact
-              </a>
+                Portfolio
+              </Link>
             </li>
-           
             <li>
               <Link
                 to="/contactus"

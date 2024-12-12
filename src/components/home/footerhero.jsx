@@ -18,8 +18,8 @@ export default function Footerhero() {
               Take your business to <br /> the next level.
             </h1>
             <p>
-              Get more insights and reports for your startup and improve the
-              <br /> customer relationships.
+              Get more insights and reports for your startup and improve<br/> the
+               customer relationships.
             </p>
             <a href="#" class="cta-button">
               Contact us

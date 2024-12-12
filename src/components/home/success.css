@@ -90,8 +90,9 @@
     color: #e0e0e0;
     margin-bottom: 2rem;
     line-height: 1.6;
-    font-size: 16px;
-    max-width: 500px;
+    font-size: 14px;
+    font-family: 'inter';
+    max-width: 400px;
 }
 
 .ss-metrics {

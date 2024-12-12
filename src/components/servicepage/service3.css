@@ -5,7 +5,7 @@
   padding:  5%;
   justify-content: center;
   box-sizing: border-box;
-  background: rgba(255, 255, 255, 1);
+  background: #ffffff;
 
 }
 
@@ -17,19 +17,21 @@
 }
 
 .sm3-content h1 {
-  font-size: 2.5em;
+  font-size: 2.2em;
   font-family: 'Sora';
   margin-bottom: 10px;
-  color: #333;
+  color: #040309;
   font-weight: 400;
 }
 
 .sm3-content p {
-  color:rgba(4,3,9,1);
-  font-family: 'Inter';
-  font-weight: 500;
-  margin-top: 25px;
-  line-height: 1.6;
+  color: #040309;
+    font-family: 'Inter';
+    font-weight: 400;
+    margin-top: 25px;
+    font-size: 0.9rem;
+    width: 83%;
+    line-height: 1.6
 }
 
 .sm3-botton {
@@ -43,7 +45,7 @@
   color: white;
   text-decoration: none;
   align-items: center;
-  border-radius: 15px;
+  border-radius: 12px;
   transition: background-color 0.3s;
 }
 
@@ -68,11 +70,12 @@
   margin-bottom: 10px;
   letter-spacing: 1px;
   font-weight: 600;
+  text-transform: uppercase;
 }
 @media (max-width: 768px) {
   .sm3-container {
     flex-direction: column;
-    text-align: center;
+    /* text-align: center; */
     margin-left: -5px;
   }
 
