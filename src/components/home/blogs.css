@@ -101,11 +101,11 @@ body {
 }
 
 .read-more {
-    padding: 8px 12px;
+    padding: 6px 10px;
     background-color: #6430C0;
     color: white;
     text-decoration: none;
-    border-radius: 14px;
+    border-radius: 12px;
     font-size: 14px;
     float: right;
     margin-top: 8px;
@@ -120,4 +120,16 @@ body {
     color: #ffffff;
     font-weight: 800;
   }
-  
+
+@media (max-width:400px){
+  .blog-image {
+    width: 252px;
+}}
+
+
+@media  (max-width:360px){
+    .scroll-container{
+        padding: 40px 20px;
+    }
+   
+}

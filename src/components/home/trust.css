@@ -11,7 +11,8 @@
     font-size: 0.9rem;
     text-transform: uppercase;
     margin-bottom: 0;
-    width: 300px;}
+    width: 300px;
+}
 
 .logo-carousel {
     overflow: hidden; /* Hide overflowing logos */

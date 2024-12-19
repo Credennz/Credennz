@@ -8,13 +8,13 @@ body {
 .p-container {
     background-color: #ffffff;
     padding: 5rem 2.1rem;
-    /* max-width: 1200px;
-    margin: 0 auto; */
 }
-.service-net{
+ 
+.service-net {
     display: flex;
     align-items: flex-start;
 }
+ 
 .p-container h6 {
     text-align: center;
     font-size: 14px;
@@ -45,7 +45,6 @@ body {
  
 .services-lower {
     display: grid;
-    height: 240px;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
 }
@@ -53,7 +52,7 @@ body {
 .service-item {
     border-radius: 24px;
     padding: 2rem 2rem 0 2rem;
-    height: 100%;
+    height: 240px;
     transition: transform 0.3s ease;
     display: flex;
     flex-direction: column;
@@ -101,6 +100,7 @@ body {
     font-size: 12px;
     line-height: 1.5;
 }
+ 
 .service-item:hover {
     background: linear-gradient(180deg, #2B409C 0%, #1E2D6D 30.98%, #0F1636 100%);
     color: #ffffff;
@@ -117,22 +117,37 @@ body {
     justify-content: flex-end;
     flex-shrink: 0;
 }
-.service-image img{
-    position: relative;
-    top: 42px;
-    left: 15px;
  
+.service-image-ai img {
+    position: relative;
+    top: -8px;
+    left: 15px;
 }
-@media (max-width: 1112px) {
+ 
+.service-image-app img {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+ 
+@media (max-width: 1160px) {
    
-    .service-net{
-        flex-direction: column;
-    }
-    .service-content{
+    .service-content {
         margin-left: 0px;
     }
     .services-lower {
         height: auto;
+    }
+    .service-item{
+        height: auto;
+    }
+    .service-image-ai img {
+        height: 80px;
+       
+    }
+    .service-image-app img {
+        height: 80px;
+     
     }
 }
  
@@ -144,10 +159,46 @@ body {
     .p-container h1 {
         font-size: 36px;
     }
-   
+    .service-image-ai img {
+        height: 80px;
+        top: 28px;
+        left: 10px;
+    }
  
- 
+    .service-image-app img {
+        height: 80px;
+        top: 15px;
+        left: 17px;
+    }
 }
+@media (max-width:890px) {
+    .service-image-ai img {
+        height: 80px;
+        top: 7px;
+        left: 10px;
+    }
+ 
+    .service-image-app img {
+        height: 80px;
+        top: 15px;
+        left: 17px;
+    }
+}
+ 
+ 
+@media (max-width:830px) {
+    .service-image-ai img {
+        height: 80px;
+        top: 44px;
+        left: 10px;
+    }
+ 
+    .service-image-app img {
+        height: 80px;
+        top: 54px;
+        left: 17px;
+    }
+}  
  
 @media (max-width: 768px) {
     .services-upper,
@@ -159,24 +210,35 @@ body {
         font-size: 32px;
     }
  
-    .service-image img{
+    .service-image-ai img {
         position: relative;
         top: 0px;
         left: 15px;
-   
     }
+ 
+    .service-image-app img {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+ 
     .service-net {
-        flex-direction:row;
+        flex-direction: row;
     }
 }
  
 @media (max-width: 460px) {
-    .service-image img{
+    .service-image-ai img {
         height: 80px;
-        top: 23px;
-        left: 13px;
+        top: 28px;
+        left: 10px;
+    }
  
-}
+    .service-image-app img {
+        height: 80px;
+        top: 39px;
+        left: 17px;
+    }
  
     .p-container {
         padding: 3rem 1rem;
@@ -190,14 +252,16 @@ body {
         padding: 1.5rem;
     }
 }
-@media (max-width: 400px){
-    .service-content li {
-        font-size: 11px;
-    }
-}
-@media (max-width: 750px) and(min-width:550) {
+ 
+@media (max-width: 750px) and (min-width: 550px) {
     .service-net {
-        flex-direction:row;
+        flex-direction: row;
     }
 }
+@media (max-width: 400px){
+    .service-image-app img {
+        top: 77px;
+    }
+}
+ 
  

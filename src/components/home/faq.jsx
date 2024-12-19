@@ -41,7 +41,7 @@ export default function FAQ() {
             ))}
           </div>
           <a href="#" className="get-template-btn">
-            Get this template →
+            Have more questions?
           </a>
         </div>
       </section>
@@ -52,18 +52,18 @@ export default function FAQ() {
 // Sample FAQ data
 const faqData = [
   {
-    question: "Is it hard to customize this template?",
+    question: "What industries we are serving?",
     answer:
-      "With how easy to use Framer is, no template is too hard to customize! Of course, if you don't have any web design experience it might be a bit tricky to figure out at first. However, we've prepared a full video tutorial, walking you step-by-step on customizing the $none template! You get it with your purchase, for free.",
+    "We cater to a wide range of industries including healthcare, finance, retail, manufacturing, education, and more. Our AI-driven insights, custom software, and integrated technology solutions are designed to address unique challenges and drive innovation in any sector."
   },
   {
-    question: "Is support available in case I get stuck?",
+    question: "What are the quality parameters?",
     answer:
-      "Yes, we offer comprehensive support for all our templates. Our dedicated support team is always ready to assist you with any questions or issues you might encounter.",
+      "Quality is at the core of everything we do. Our comprehensive QA and Testing services include automation, manual, performance, and security testing. We follow industry best practices and rigorous processes to deliver reliable, scalable, and user-friendly solutions.",
   },
   {
-    question: "What can I customize exactly on this template?",
+    question: "Can you integrate new technologies to our system?",
     answer:
-      "You have full control over customization. You can modify colors, fonts, layouts, add or remove sections, and even integrate additional features. The template is designed to be flexible and adaptable to your specific needs.",
+      "Absolutely! Our Engineering and Technology Integration services specialize in seamlessly integrating new technologies like IoT, APIs, and cloud platforms with legacy systems. This ensures enhanced functionality and minimal disruption to your business operations.",
   },
 ];

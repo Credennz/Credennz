@@ -1,39 +1,34 @@
 import React from "react";
 import "./service.css";
  
- 
-const ServiceItem = ({ title, bulletPoints, className, imageSrc, iconSrc }) => (
+const ServiceItem = ({ title, bulletPoints, className, imageSrc, iconSrc, imageClass }) => (
   <div className={`service-item ${className}`}>
     <div className="service-content">
       <h2>{title}</h2>
       <div className="service-net">
-      <ul>
-        {bulletPoints.map((point, index) => (
-          <li key={index}>
+        <ul>
+          {bulletPoints.map((point, index) => (
+            <li key={index}>
+              <img
+                src="../img/icon.svg"
+                alt="Bullet icon"
+                width={16}
+                height={16}
+                className="bullet-icon"
+              />
+              {point}
+            </li>
+          ))}
+        </ul>
+        {imageSrc && (
+          <div className={`service-image ${imageClass}`}>
             <img
-              src="../img/icon.svg"
-              alt="Bullet icon"
-              width={16}
-              height={16}
-              className="bullet-icon"
+              src={imageSrc}
+              alt={`${title} illustration`}
             />
-            {point}
-          </li>
-        ))}
-      </ul>
-      {imageSrc && (
-        <div className="service-image">
-          <img
-            src={imageSrc}
-            alt={`${title} illustration`}
-            // width={160}
-            // height={160}
-         
-          />
-        </div>
-      )}
+          </div>
+        )}
       </div>
-     
     </div>
   </div>
 );
@@ -49,6 +44,7 @@ export default function Service() {
       ],
       imageSrc: "/img/Ai.svg",
       iconSrc: "/img/icon.svg",
+      imageClass: "service-image-ai",
     },
     {
       title: "Custom Software Development",
@@ -59,6 +55,7 @@ export default function Service() {
       ],
       imageSrc: "/img/App.svg",
       iconSrc: "/img/icon.svg",
+      imageClass: "service-image-app",
     },
     {
       title: "Maintenance and Support",
@@ -68,6 +65,7 @@ export default function Service() {
         "System optimization",
       ],
       iconSrc: "/img/icon.svg",
+      imageClass: "",
     },
     {
       title: "Engineering and tech integrations",
@@ -77,6 +75,7 @@ export default function Service() {
         "Third party software integration",
       ],
       iconSrc: "/img/icon.svg",
+      imageClass: "",
     },
     {
       title: "Ecom and no-code development",
@@ -86,6 +85,7 @@ export default function Service() {
         "store and system management",
       ],
       iconSrc: "/img/icon.svg",
+      imageClass: "",
     },
   ];
  
@@ -103,6 +103,7 @@ export default function Service() {
               bulletPoints={service.bulletPoints}
               imageSrc={service.imageSrc}
               iconSrc={service.iconSrc}
+              imageClass={service.imageClass}
             />
           ))}
         </div>
@@ -115,6 +116,7 @@ export default function Service() {
               bulletPoints={service.bulletPoints}
               imageSrc={service.imageSrc}
               iconSrc={service.iconSrc}
+              imageClass={service.imageClass}
             />
           ))}
         </div>
@@ -122,5 +124,6 @@ export default function Service() {
     </section>
   );
 }
+ 
  
  
